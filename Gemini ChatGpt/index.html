@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raph ChatBOT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Linking Google Icon Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=draw" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- App Header -->
+    <div class="container">
+        <header class="app-header">
+            <h1 class="heading">Hello, There</h1>
+            <h2 class="sub-heading">How Can I Help You?</h2>
+        </header>
+
+        <!-- Suggestions List -->
+        <ul class="suggestions">
+            <li class="suggestions-items">
+                <p class="text">Design a Home or Office setup for remote work under $5000.</p>
+                <i class='bx bxs-palette' ></i>
+            </li>
+            <li class="suggestions-items">
+                <p class="text">How can i level up my web development expertise in 2025?</p>
+                <i class='bx bx-bulb'></i>
+            </li>
+            <li class="suggestions-items">
+                <p class="text">List some useful tools for debugging javascript code</p>
+                <i class='bx bx-world'></i>
+            </li>
+            <li class="suggestions-items">
+                <p class="text">Create a React js component for the simple todo-list app</p>
+                <i class='bx bx-code-alt'></i>
+            </li>
+        </ul>
+
+        <!-- Chat Container -->
+        <div class="chats-container">
+        </div>
+
+        <!-- Prompt Container -->
+        <div class="prompt-container">
+            <div class="prompt-wrapper">
+                <form action="#" class="prompt-form">
+                    <input type="text" placeholder="Ask Raph" class="prompt-input" required>
+                    <div class="prompt-actions">
+                        <!-- File Upload Wrapper -->
+                        <div class="file-upload-wrapper">
+                            <img src="#" class="file-preview">
+                            <input type="file" accept="image/*, .pdf, .txt, .csv" id="file-input" hidden>
+                            <button type="button" class="file-icon"><i class='bx bxs-file-doc'></i>Description</button>
+                            <button id="add-file-btn" type="button" class="attach-file" ><i class='bx bxs-file-doc'></i></button>
+                            <button id="cancel-file-btn" type="button" class="attach-file" ><i class='bx bx-window-close'></i></button>
+
+                        </div>
+                        <button type="button" id="stop-response-btn" class="send-message"  ><i class='bx bx-stop-circle'></i></button>
+                        <button id="send-prompt-btn" class="send-message"  ><i class='bx bxs-arrow-from-bottom'></i></button>
+                    </div>
+                </form>
+
+                <button id="theme-toggle-btn" class="light_mode"  ><i class='bx bx-moon'></i></button>
+                <button id="delete-chats-btn" class="delete"  ><i class='bx bxs-trash'></i></button>
+            </div>
+
+            <p class="disclaimer-text">Raph can make mistakes, so double-check It.</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
