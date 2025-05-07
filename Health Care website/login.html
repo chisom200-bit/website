@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - HealthCare Plus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #527fba, #70c1f0);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+form h2 {
+  color: #2c7be5;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form label {
+  font-weight: 500;
+  margin: 0.5rem 0 0.2rem;
+  display: block;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #2c7be5;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #2c7be5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+</style>
+<body>
+
+  <div class="login-container">
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <h2>Login to Your Account</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" class="login-btn">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+
+      <div id="login-errors" class="error-msg"></div>
+    </form>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const errorBox = document.getElementById("login-errors");
+      let errors = [];
+
+      const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (!emailPattern.test(email)) {
+        errors.push("Please enter a valid email.");
+      }
+
+      if (password.length < 6) {
+        errors.push("Password must be at least 6 characters.");
+      }
+
+      if (errors.length > 0) {
+        errorBox.innerHTML = errors.join("<br>");
+        return false;
+      }
+
+      errorBox.innerHTML = "";
+      return true;
+    }
+  </script>
+
+</body>
+</html>

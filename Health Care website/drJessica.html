@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Profile - Dr. Jessica Syemdy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .top-section img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0077b6;
+    }
+
+    .top-section .info {
+      flex: 1;
+    }
+
+    .top-section h2 {
+      margin: 0;
+      color: #0077b6;
+    }
+
+    .top-section p {
+      margin: 8px 0;
+      color: #444;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+      color: #0077b6;
+    }
+
+    .section p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .availability span {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+      background: #caf0f8;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .reviews .review {
+      border: 1px solid #ddd;
+      border-left: 4px solid #0077b6;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+
+    .appointment-form form {
+      display: grid;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .appointment-form input,
+    .appointment-form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      resize: none;
+    }
+
+    .appointment-form button {
+      padding: 10px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Practitioner Profile</h1>
+  </header>
+
+  <div class="profile-container">
+    <div class="top-section">
+      <img src="./assets/Dentist.jpg" alt="Dr. Jessica Syemdy" />
+      <div class="info">
+        <h2>Dr. Jessica Syemdy</h2>
+        <p><strong>Specialty:</strong> Pediatrician</p>
+        <p><strong>Experience:</strong> 12+ years</p>
+        <p><strong>Location:</strong> Raphael's Health Care, Lagos</p>
+      </div>
+    </div>
+
+    <div class="section about">
+      <h3>About Dr. Jessica Syemdy</h3>
+      <p>
+        Dr. Jessica is a board-certified pediatrician with over 12 years of experience in providing comprehensive care to children. 
+        She holds a Master of Public Health (MPH) and is an International Board-Certified Lactation Consultant (IBCLC), 
+        demonstrating her commitment to holistic child and family health. Dr. Jessica is affiliated with Summit Health and practices in New Rochelle, 
+        NY. Her clinical interests include pediatric primary care, breastfeeding support, and community health initiatives.
+      </p>
+    </div>
+
+    <div class="section availability">
+      <h3>Availability</h3>
+      <span> Mon and Tue, 8AM–1PM</span>
+    </div>
+
+    <div class="section contact">
+      <h3>Contact & Booking</h3>
+      <p>Email: jessica.symdy@raphaelhealth.com</p>
+      <p>Phone: +234 930 7349 480</p>
+      <a href="#" class="contact-button">Call Now</a>
+    </div>
+
+    <div class="section reviews">
+      <h3>Patient Reviews</h3>
+      <div class="review">
+        <strong>Joshua H.</strong> – "Dr. Jessica is great. She's very personable, and my baby (and I) feel very comfortable with her. She's not the 'prescription' doctor style; she taught about the importance of nutrition, sleep, and development."
+      </div>
+      <div class="review">
+        <strong>Emily P.</strong> – "Dr. Jessica is an outstanding pediatrician! She’s so patient with my kids and always makes sure to explain things in a way that I understand. She genuinely cares about their well-being, and it’s clear she is passionate about her work. I couldn’t ask for a better doctor for my children."
+      </div>
+      <div class="review">
+        <strong>Housten B.</strong> – "We’ve been seeing Dr. Simkins for a couple of years now, and she’s always been so supportive and reassuring. She takes the time to listen to our concerns and always provides practical advice. My kids love her, and I trust her with all their medical needs."
+      </div>
+    </div>
+
+    <div class="section appointment-form">
+      <h3>Book an Appointment</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="date" required />
+        <textarea rows="4" placeholder="Reason for Appointment"></textarea>
+        <button type="submit">Submit Appointment Request</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Grace Health Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

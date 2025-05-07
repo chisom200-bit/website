@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Profile - Dr. Michael Jones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .top-section img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0077b6;
+    }
+
+    .top-section .info {
+      flex: 1;
+    }
+
+    .top-section h2 {
+      margin: 0;
+      color: #0077b6;
+    }
+
+    .top-section p {
+      margin: 8px 0;
+      color: #444;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+      color: #0077b6;
+    }
+
+    .section p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .availability span {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+      background: #caf0f8;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .reviews .review {
+      border: 1px solid #ddd;
+      border-left: 4px solid #0077b6;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+
+    .appointment-form form {
+      display: grid;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .appointment-form input,
+    .appointment-form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      resize: none;
+    }
+
+    .appointment-form button {
+      padding: 10px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Practitioner Profile</h1>
+  </header>
+
+  <div class="profile-container">
+    <div class="top-section">
+      <img src="./assets/radiologist2.webp" alt="Dr. Michael Jones" />
+      <div class="info">
+        <h2>Dr. Michael Jones</h2>
+        <p><strong>Specialty:</strong> Radiologist</p>
+        <p><strong>Experience:</strong> 18+ years</p>
+        <p><strong>Location:</strong> Raphael's Health Care, Lagos</p>
+      </div>
+    </div>
+
+    <div class="section about">
+      <h3>About Dr. Michael Jones</h3>
+      <p>
+        Dr. Michael Jones is a board-certified radiologist with over 18+ years of experience in diagnostic imaging. 
+        He earned his medical degree from Thomas Jefferson University and currently practices in Savannah, Georgia. 
+        Dr. Jones is affiliated with several hospitals, including Memorial Health University Medical Center, Coastal Carolina Hospital, 
+        and Hilton Head Regional Medical Center. His expertise encompasses a wide range of imaging modalities, 
+        with a particular focus on breast imaging and biopsies. 
+        Dr. Jones is committed to delivering accurate and timely diagnoses to support optimal patient care. 
+      </p>
+    </div>
+
+    <div class="section availability">
+      <h3>Availability</h3>
+      <span> Wed, 9AM–6PM</span>
+    </div>
+
+    <div class="section contact">
+      <h3>Contact & Booking</h3>
+      <p>Email: michael.jones@raphaelhealth.com</p>
+      <p>Phone: +234 738 7483 903</p>
+      <a href="#" class="contact-button">Call Now</a>
+    </div>
+
+    <div class="section reviews">
+      <h3>Patient Reviews</h3>
+      <div class="review">
+        <strong>Linda P.</strong> – "Dr. Michael Jones was incredibly thorough during my imaging exam. He explained everything clearly and answered all of my questions, which helped ease my anxiety. His attention to detail and professionalism made me feel confident in the results. Highly recommend!"
+      </div>
+      <div class="review">
+        <strong>Henry T.</strong> – "I recently had a procedure performed by Dr. Jones, and I was impressed by his professionalism and caring approach. He made sure I was comfortable and took the time to discuss the findings, which gave me peace of mind. I would definitely trust him with any future imaging needs."
+      </div>
+      <div class="review">
+        <strong>Sarah B.</strong> – "Dr. Jones has been my go-to radiologist for years. His expertise in interpreting scans is top-notch, and he always provides clear and concise reports. His reliability and precision give me complete confidence in his care."
+      </div>
+    </div>
+
+    <div class="section appointment-form">
+      <h3>Book an Appointment</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="date" required />
+        <textarea rows="4" placeholder="Reason for Appointment"></textarea>
+        <button type="submit">Submit Appointment Request</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Grace Health Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

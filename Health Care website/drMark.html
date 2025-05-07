@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Profile - Dr. Mark Lee</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .top-section img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0077b6;
+    }
+
+    .top-section .info {
+      flex: 1;
+    }
+
+    .top-section h2 {
+      margin: 0;
+      color: #0077b6;
+    }
+
+    .top-section p {
+      margin: 8px 0;
+      color: #444;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+      color: #0077b6;
+    }
+
+    .section p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .availability span {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+      background: #caf0f8;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .reviews .review {
+      border: 1px solid #ddd;
+      border-left: 4px solid #0077b6;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+
+    .appointment-form form {
+      display: grid;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .appointment-form input,
+    .appointment-form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      resize: none;
+    }
+
+    .appointment-form button {
+      padding: 10px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Practitioner Profile</h1>
+  </header>
+
+  <div class="profile-container">
+    <div class="top-section">
+      <img src="./assets/All specialist.jpg" alt="Dr. Mark Lee" />
+      <div class="info">
+        <h2>Dr. Mark Lee</h2>
+        <p><strong>Specialty:</strong> Dermatologist</p>
+        <p><strong>Experience:</strong> 12+ years</p>
+        <p><strong>Location:</strong> Raphael's Health Care, Lagos</p>
+      </div>
+    </div>
+
+    <div class="section about">
+      <h3>About Dr. Mark Lee</h3>
+      <p>
+        Dr. Mark Lee is a board-certified dermatologist known for her expertise in medical, surgical, and cosmetic skin care. With a reputation for precision, compassion, and patient-centered care, she has successfully treated a wide range of skin conditions—from acne and eczema to skin cancer and cosmetic concerns. Dr. Lee combines the latest dermatological advancements with a personalized approach to help every patient look and feel their best.
+      </p>
+    </div>
+
+    <div class="section availability">
+      <h3>Availability</h3>
+      <span>Sat and Sun, 11AM–2PM</span>
+    </div>
+
+    <div class="section contact">
+      <h3>Contact & Booking</h3>
+      <p>Email: mark.lee@raphaelhealth.com</p>
+      <p>Phone: +234 378 3748 923</p>
+      <a href="#" class="contact-button">Call Now</a>
+    </div>
+
+    <div class="section reviews">
+      <h3>Patient Reviews</h3>
+      <div class="review">
+        <strong>Jessica L.</strong> – "Dr. Mark Lee is hands-down the best dermatologist I’ve ever visited. I struggled with severe acne for years, and nothing seemed to work—until I met Dr. Green. He created a treatment plan tailored to my skin type, and within months, my skin was clear and glowing. His knowledge, patience, and genuine care completely changed my life."
+      </div>
+      <div class="review">
+        <strong>Thomas M.</strong> – "Dr. Lee combines professionalism with warmth. I went in for a skin cancer screening, and he was incredibly thorough and reassuring. He explained everything clearly, answered all my questions, and made what could’ve been a scary experience completely stress-free. I left feeling confident in his care and expertise."
+      </div>
+      <div class="review">
+        <strong>Monica D.</strong> – "From my first visit, Dr. Alex Green made me feel at ease. He treated my eczema flare-up with a new approach that brought immediate relief. Unlike other doctors I’ve seen, he truly listens and treats the person, not just the symptoms. I recommend him to anyone looking for real results and a dermatologist who truly cares."
+      </div>
+    </div>
+
+    <div class="section appointment-form">
+      <h3>Book an Appointment</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="date" required />
+        <textarea rows="4" placeholder="Reason for Appointment"></textarea>
+        <button type="submit">Submit Appointment Request</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Grace Health Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

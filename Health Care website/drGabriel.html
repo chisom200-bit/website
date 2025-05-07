@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Profile - Dr. Gabriel Janitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .profile-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .top-section img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0077b6;
+    }
+
+    .top-section .info {
+      flex: 1;
+    }
+
+    .top-section h2 {
+      margin: 0;
+      color: #0077b6;
+    }
+
+    .top-section p {
+      margin: 8px 0;
+      color: #444;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      border-bottom: 2px solid #0077b6;
+      padding-bottom: 5px;
+      color: #0077b6;
+    }
+
+    .section p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .availability span {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+      background: #caf0f8;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .reviews .review {
+      border: 1px solid #ddd;
+      border-left: 4px solid #0077b6;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+
+    .appointment-form form {
+      display: grid;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .appointment-form input,
+    .appointment-form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      resize: none;
+    }
+
+    .appointment-form button {
+      padding: 10px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Practitioner Profile</h1>
+  </header>
+
+  <div class="profile-container">
+    <div class="top-section">
+      <img src="./assets/pyschiatrist.2jpg.jpg" alt="Dr. Gabriel Janitor" />
+      <div class="info">
+        <h2>Dr. Gabriel Janitor</h2>
+        <p><strong>Specialty:</strong> Neurologist</p>
+        <p><strong>Experience:</strong> 18+ years</p>
+        <p><strong>Location:</strong> Raphael's Health Care, Lagos</p>
+      </div>
+    </div>
+
+    <div class="section about">
+      <h3>About Dr. Gabriel Janitor</h3>
+      <p>
+        Dr. Gabriel is a board-certified neurologist with over 37 years of experience in diagnosing and treating a wide range of neurological conditions.
+        Based in San Francisco, CA, he is known for his comprehensive approach to patient care, 
+        combining clinical expertise with a deep commitment to patient well-being. 
+        Dr. Gabriel is affiliated with Raphael's Health Care and is dedicated to providing personalized treatment plans to meet the unique needs of 
+        each patient.
+      </p>
+    </div>
+
+    <div class="section availability">
+      <h3>Availability</h3>
+      <span> Mon - Sat, 9AM–6PM</span>
+    </div>
+
+    <div class="section contact">
+      <h3>Contact & Booking</h3>
+      <p>Email: gabriel.janitor@raphaelhealth.com</p>
+      <p>Phone: +234 804 7489 4903</p>
+      <a href="#" class="contact-button">Call Now</a>
+    </div>
+
+    <div class="section reviews">
+      <h3>Patient Reviews</h3>
+      <div class="review">
+        <strong>Kelly N.</strong> – "Dr. Gabriel is an exceptional neurologist. He took the time to thoroughly explain my condition and treatment options, ensuring I was comfortable and informed every step of the way."
+      </div>
+      <div class="review">
+        <strong>Nina B.</strong> – "I've been seeing Dr. Gabriel for several years, and he has always been attentive and caring. His expertise has been invaluable in managing my neurological health."
+      </div>
+      <div class="review">
+        <strong>Ben T.</strong> – "Dr. Gabriel is a true professional. He listens carefully, answers all my questions, and provides thoughtful and effective treatment. I highly recommend him to anyone seeking a neurologist."
+      </div>
+    </div>
+
+    <div class="section appointment-form">
+      <h3>Book an Appointment</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="date" required />
+        <textarea rows="4" placeholder="Reason for Appointment"></textarea>
+        <button type="submit">Submit Appointment Request</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Grace Health Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
